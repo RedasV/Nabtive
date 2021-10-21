@@ -1,1 +1,55 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-panel {
+  background-color: rgba(255, 255, 255, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 60;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top-panel-info {
+  text-decoration: none;
+  color: black;
+  font-size: .8em;
+  position: relative;
+}
+
+.wrapper {
+  background-color: #f3c6bd;
+  text-align: center;
+  width: 100%;
+}
+
+.navigationbar {
+  padding: 30px 0 40px;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  position: relative;
+}
+
+.navigationbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigationbar .logo {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
