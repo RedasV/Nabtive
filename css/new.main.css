@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-wrapper {
+  width: 100%;
+}
+
+.status-bar {
+  text-align: center;
+  font-size: 13px;
+  background-color: #fae8e5;
+}
+
+.content-wrapper-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f3c6bd;
+}
+
+.content-wrapper-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #00ff88;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  font-size: 18px;
+  padding: 40px 15px 60px 15px;
+}
+
+.navigation-bar .page-icon {
+  display: -ms-grid;
+  display: grid;
+  text-align: left;
+}
+
+.navigation-bar .page-icon .logo {
+  font-weight: lighter;
+  opacity: .75;
+  word-spacing: 11px;
+}
+
+.navigation-bar .logo {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.navigation-bar .home {
+  text-decoration: none;
+  padding: 10px 8px;
+  color: black;
+  font-weight: bold;
+}
+
+.navigation-bar .login {
+  text-decoration: none;
+  background-color: #3041c4;
+  color: white;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+.teaser {
+  padding: 0px 15px 40px 15px;
+}
+
+.teaser .main-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 38px;
+}
+
+.teaser .teaser-main-body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.teaser .teaser-main-body .first-text-box {
+  text-align: left;
+  font-size: 24px;
+  max-width: 456px;
+  margin-bottom: 115px;
+}
+
+.teaser .teaser-main-body .get-started {
+  text-decoration: none;
+  background-color: #3041c4;
+  color: white;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.teaser .teaser-main-body .sign-up {
+  text-decoration: none;
+  background-color: #3041c4;
+  color: white;
+  font-weight: bold;
+  padding: 12px 28px;
+  border-radius: 5px;
+}
+
+.teaser .teaser-main-body .image {
+  margin-left: 80px;
+  max-width: 350px;
+  max-height: 277px;
+}
+
+@media screen and (max-width: 975px) {
+  .teaser-main-body {
+    display: -ms-grid;
+    display: grid;
+    background-color: cadetblue;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+/*# sourceMappingURL=new.main.css.map */

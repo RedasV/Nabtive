@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+.main-wrapper {
+    width: 100%;
+}
+
+.status-bar {
+    text-align: center;
+    font-size: 13px;
+    background-color: rgb(250, 232, 229)
+}
+
+.content-wrapper-1 {
+    display: flex;
+    justify-content: center;
+    background: rgb(243, 198, 189)
+}
+
+.content-wrapper-2 {
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 255, 136);
+}
+
+.content {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.navigation-bar {
+    display: flex;
+    place-content: space-between;
+    font-size: 18px;
+    padding: 40px 15px 60px 15px;
+
+    .page-icon {
+        display: grid;
+        text-align: left;
+
+        .logo {
+            font-weight: lighter;
+            opacity: .75;
+            word-spacing: 11px;
+        }
+    }
+
+    .logo {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .home {
+        text-decoration: none;
+        padding: 10px 8px;
+        color: black;
+        font-weight: bold;
+        
+    }
+
+    .login {
+        text-decoration: none;
+        background-color: rgb(48, 65, 196);
+        color: white;
+        font-weight: bold;
+        padding: 12px 28px;
+        border-radius: 5px;
+        margin-left: 40px;
+    }
+}
+
+.teaser {
+    padding: 0px 15px 40px 15px;
+
+    .main-header {
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+        margin-bottom: 38px;
+    }
+
+    .teaser-main-body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+       .first-text-box {
+            text-align: left;
+            font-size: 24px;
+            max-width: 456px;
+            margin-bottom: 115px;
+        }
+
+        .get-started {
+            text-decoration: none;
+            background-color: rgb(48, 65, 196);
+            color: white;
+            font-weight: bold;
+            padding: 12px 28px;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
+
+        .sign-up {
+            text-decoration: none;
+            background-color: rgb(48, 65, 196);
+            color: white;
+            font-weight: bold;
+            padding: 12px 28px;
+            border-radius: 5px;
+        }
+
+        .image {
+            margin-left: 80px;
+            max-width: 350px;
+            max-height: 277px;
+        }
+    }  
+}
+
+@media screen and (max-width: 975px) {
+    .teaser-main-body {
+        display: grid;
+        background-color: cadetblue;
+        grid-template-columns: 100%;
+
+    }
+  }

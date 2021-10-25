@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+.flex {
+  max-width: 3000px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 30px red;
+}
+
 :root {
   --primary-button-color: #0b5bac;
   --text-color: white;
@@ -10,12 +18,12 @@
 
 .top-panel {
   background-color: rgba(236, 223, 221, 0.952);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 60;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -32,14 +40,14 @@
 .wrapper {
   background-color: #f3c6bd;
   text-align: center;
-  width: 100%;
   font-family: sans-serif;
-  padding-bottom: 126px;
+  padding: 176px 0 126px;
+  margin: -149px 0px 0px;
 }
 
 .margin {
-  margin-left: 25em;
-  margin-right: 25em;
+  margin-left: 472px;
+  margin-right: 472px;
 }
 
 .navigationbar {
@@ -80,6 +88,7 @@
   background-color: #f3c6bd;
   padding: 10px 8px;
   color: black;
+  font-size: 18px;
 }
 
 .login {
@@ -91,13 +100,19 @@
   background-color: var(--primary-button-color);
   padding: 12px 28px;
   border-radius: 5px;
+  font-size: 18px;
 }
 
 .firstpanel {
-  margin-left: 25em;
-  margin-right: 25em;
-  padding: 11px 15px;
+  margin-left: 472px;
+  margin-right: 472px;
+  padding: 0px 15px;
   position: relative;
+}
+
+.fipanel-img {
+  max-width: 350px;
+  max-height: 277px;
 }
 
 .grid {
@@ -159,5 +174,61 @@
   padding: 12px 28px;
   border-radius: 5px;
   font-size: 18px;
+}
+
+.sellout .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-left: 472px;
+  margin-right: 472px;
+  padding: 76px 0px;
+}
+
+.dev {
+  padding: 0px 15px;
+}
+
+.dev .h-dev {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.dev .developer {
+  font-size: 24px;
+  line-height: 1.41667;
+}
+
+.market {
+  padding: 0px 15px;
+}
+
+.market .h-market {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.market .marketer {
+  font-size: 24px;
+  line-height: 1.41667;
+}
+
+.pirmas {
+  max-width: 1000px;
+}
+
+.antras {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+  text-align: center;
+}
+
+.trecias {
+  max-width: 1000px;
 }
 /*# sourceMappingURL=main.css.map */
