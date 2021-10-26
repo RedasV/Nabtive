@@ -78,6 +78,7 @@
 
 .teaser {
     padding: 0px 15px 40px 15px;
+    box-sizing: border-box;
 
     .main-header {
         text-align: center;
@@ -88,13 +89,14 @@
 
     .teaser-main-body {
         display: grid;
-        grid-template-columns: 50% 50%;
-
+        grid-template-columns: repeat(auto-fit, minmax(445px, 1fr));
+        
        .first-text-box {
+            
             text-align: left;
             font-size: 24px;
             max-width: 456px;
-            margin-bottom: 115px;
+            margin-bottom: 100px;    
         }
 
         .get-started {
@@ -104,7 +106,7 @@
             font-weight: bold;
             padding: 12px 28px;
             border-radius: 5px;
-            margin-right: 5px;
+            margin-right: 5px;      
         }
 
         .sign-up {
@@ -114,21 +116,41 @@
             font-weight: bold;
             padding: 12px 28px;
             border-radius: 5px;
+            margin-right: 5px; 
         }
 
         .image {
-            margin-left: 80px;
+            // margin-left: 80px;
             max-width: 350px;
-            max-height: 277px;
+            max-height: 277px; 
+            justify-self: center;
         }
-    }  
-}
+    } 
+  @media screen and (max-width: 919px) {
 
-@media screen and (max-width: 975px) {
     .teaser-main-body {
-        display: grid;
-        background-color: cadetblue;
-        grid-template-columns: 100%;
+       
+        .first-column {
+            margin-bottom: 15px;
+            
+        }
+        
+        .first-text-box {
+            margin-bottom: 30px;
+        }
 
+        .image {
+        justify-self: center;
+        }
     }
-  }
+  } 
+
+  @media screen and (max-width: 760px) {
+
+        .teaser-main-body-buttons {
+        display: grid;
+        row-gap: 10px;
+        text-align: center;
+        }
+    }
+}
